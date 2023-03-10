@@ -5,4 +5,6 @@ This plugin now also comes with an Electricity bill calculator that shows your b
 
 The bill is calculated with the formula (version Electricity Tariff Revision 2023) published by Ceylon Electricity Board (CEB) at https://ceb.lk/commercial-tariff/en.
 
-![Screenshot of the extension](https://github.com/lilylakshi/solar-savings-calculator/blob/main/screenshot.png?raw=true)
+![Screenshot of the soalr savings page](https://github.com/lilylakshi/solar-savings-calculator/blob/main/screenshots/solar_savings_screenshot.png?raw=true)
+
+![Screenshot of the bill calculator page](https://github.com/lilylakshi/solar-savings-calculator/blob/main/screenshots/bill_screenshot.png?raw=true)
