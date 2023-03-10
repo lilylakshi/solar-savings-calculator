@@ -41,21 +41,6 @@ function calculateUnder60(units) {
     return total + 240;
 }
 
-function calculateBill(units) {
+export function calculateBill2022(units) {
     return units <= 60 ? calculateUnder60(units) : calculateOver60(units);
 }
-
-function onFormSubmit() {
-    var gridInput = document.getElementById("gridIn").value;
-    var solarInput = document.getElementById("solarIn").value;
-    var totalUnits = +gridInput + +solarInput;
-    var result = calculateBill(totalUnits) - calculateBill(gridInput);
-    document.getElementById("resultIn").value = result;
-}
-
-function init() {
-    var calculateBtn = document.getElementById("calculateBtn");
-    calculateBtn.addEventListener("click", onFormSubmit);
-}
-
-init();
