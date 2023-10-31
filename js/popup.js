@@ -1,3 +1,4 @@
+import { calculateBill2023Oct } from './rev2023_oct.js';
 import { calculateBill2023 } from './rev2023.js';
 import { calculateBill2022 } from './rev2022.js';
 
@@ -11,15 +12,15 @@ function onSavingsFormSubmit() {
 
 function onBillFormSubmit() {
     var usageInput = document.getElementById("usageIn").value;
-    var newBill = calculateBill2023(+usageInput);
-    var oldBill = calculateBill2022(+usageInput);
+    var newBill = calculateBill2023Oct(+usageInput);
+    var oldBill = calculateBill2023(+usageInput);
     document.getElementById("oldBillIn").value = oldBill;
     document.getElementById("newBillIn").value = newBill;
 }
 
 function calculateSavings(gridInput, totalUnits) {
 
-    return calculateBill2023(totalUnits) - calculateBill2023(gridInput);
+    return calculateBill2023Oct(totalUnits) - calculateBill2023Oct(gridInput);
 }
 
 function init() {
